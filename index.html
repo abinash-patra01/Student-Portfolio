@@ -4,76 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Student Portfolio</title>
+    <title>My Advanced Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h2>My Portfolio</h2>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <h2 class="logo">Port<span>folio.</span></h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Hello, I'm a Student</h1>
-        <h2>Welcome to My Portfolio</h2>
-        <p>I'm learning Web Development and Programming.</p>
-        <button onclick="showMessage()">Know More</button>
+    <div class="background-circle circle1"></div>
+    <div class="background-circle circle2"></div>
+
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Your Name</span></h1>
+
+            <h2>I'm a <span id="typing"></span></h2>
+
+            <p class="description">
+                A passionate student interested in technology,
+                programming, web development and innovation.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">Explore Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image reveal">
+            <div class="profile-circle">
+                <div class="profile-text">YOUR<br>PHOTO</div>
+            </div>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a student interested in technology,
-            programming and web development.
-            I enjoy learning new skills and building projects.
+    <section id="about" class="section reveal">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p class="about-text">
+            I am a student and aspiring developer who loves
+            creating modern websites and exploring new technologies.
+            My goal is to develop innovative solutions through coding.
         </p>
     </section>
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>C Programming</li>
-            <li>Python</li>
-        </ul>
-    </section>
+    <section id="skills" class="section reveal">
+        <h2 class="section-title">My <span>Skills</span></h2>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p>Currently pursuing my graduation.</p>
-        <p>Interested in Computer Science and Technology.</p>
-    </section>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-heading">
+                    <span>HTML</span><span>90%</span>
+                </div>
+                <div class="progress"><span style="--level:90%"></span></div>
+            </div>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Student Portfolio</h3>
-            <p>A personal portfolio created using HTML, CSS and JavaScript.</p>
+            <div class="skill">
+                <div class="skill-heading">
+                    <span>CSS</span><span>85%</span>
+                </div>
+                <div class="progress"><span style="--level:85%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-heading">
+                    <span>JavaScript</span><span>75%</span>
+                </div>
+                <div class="progress"><span style="--level:75%"></span></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-heading">
+                    <span>Python</span><span>70%</span>
+                </div>
+                <div class="progress"><span style="--level:70%"></span></div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Calculator</h3>
-            <p>A simple calculator project.</p>
+    </section>
+
+    <section id="projects" class="section reveal">
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <div class="project-icon">🌐</div>
+                <h3>Portfolio Website</h3>
+                <p>A modern responsive personal portfolio website.</p>
+                <a href="#contact">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">📦</div>
+                <h3>Shipping Calculator</h3>
+                <p>A calculator that estimates shipping costs.</p>
+                <a href="#contact">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon">🤖</div>
+                <h3>AI Innovation</h3>
+                <p>Exploring innovative AI-based project ideas.</p>
+                <a href="#contact">View Project →</a>
+            </div>
+
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: student@gmail.com</p>
-        <p>Phone: 1234567890</p>
+    <section id="contact" class="section reveal">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <p class="contact-text">
+            Have a project idea? Let's connect!
+        </p>
+
+        <a href="mailto:your@email.com" class="btn">Send Email</a>
     </section>
 
     <footer>
-        <p>© 2026 My Student Portfolio</p>
+        <p>© 2026 Your Name | All Rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
